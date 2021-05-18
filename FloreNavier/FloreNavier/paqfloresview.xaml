@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FloreNavier"
+             x:Class="FloreNavier.paqfloresview" Title="PAQUETE DE FLORES" Background="Lavender">
+    <ContentPage.BindingContext>
+        <local:AgendaFloreria ></local:AgendaFloreria>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="regresar.png" Command="{Binding RegresarCommand}"></ToolbarItem>
+      
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout Padding="10">
+
+            <Label TextColor="MidnightBlue" HorizontalTextAlignment="Center" FontSize="30">RAMO 1</Label>
+            <Image WidthRequest="300" Source="ramo1.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="20">PRECIO $500</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Start" FontSize="15">CONTIENE:</Label>
+            <Label TextColor="Black" FontSize="15">-100 Rosas (Color Lila, Rosa Pastel, Rosa, Rojo, Blancas y Moradas).</Label>
+            <Label TextColor="Black" FontSize="15">-Un moño en la parte superior de la rosas.</Label>
+            <Label TextColor="Black" FontSize="15">-Una Maya Blanca o Papel(Dedicando unas palabras o felicitaciones).</Label>
+
+            <Label TextColor="MidnightBlue" HorizontalTextAlignment="Center" FontSize="30" Margin="0,40,0,0">RAMO 2</Label>
+            <Image WidthRequest="280" Source="ramo2.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="20">PRECIO $300</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Start" FontSize="15">CONTIENE:</Label>
+            <Label TextColor="Black" FontSize="15">-2 Margaritas, 2 Claveles, 5 o 10 Narcisos y 15 Tulipanes.</Label>
+            <Label TextColor="Black" FontSize="15">-Un Jarron de Vidrio.</Label>
+
+
+            <Label  TextColor="MidnightBlue" HorizontalTextAlignment="Center" FontSize="30" Margin="0,40,0,0">RAMO 3</Label>
+            <Image WidthRequest="300" Source="ramo3.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="20">PRECIO $450</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Start" FontSize="15">CONTIENE:</Label>
+            <Label TextColor="Black" FontSize="15">-5 Girasoles, 10 Rosas y 20 Dalias.</Label>
+            <Label TextColor="Black" FontSize="15">-11 Ferreros.</Label>
+            <Label TextColor="Black" FontSize="15">-Y esta envuelto en papel china ya el cliente escoge el color ya sea(Rojo, Blanco o Rosa Fiucha)</Label>
+
+            <Label  TextColor="MidnightBlue" HorizontalTextAlignment="Center" FontSize="30" Margin="0,40,0,0">RAMO 4</Label>
+            <Image WidthRequest="300" Source="ramo4.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="20">PRECIO $200</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Start" FontSize="15">CONTIENE:</Label>
+            <Label TextColor="Black" FontSize="15">-5 Rosas Blancas, 5 Claveles Morados, 10 Rosas Moradas y alrededor las hojas.</Label>
+
+            <Label  TextColor="MidnightBlue" HorizontalTextAlignment="Center" FontSize="30" Margin="0,40,0,0">RAMO 5</Label>
+            <Image WidthRequest="300" Source="ramo5.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="20">PRECIO $700</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Start" FontSize="15">CONTIENE:</Label>
+            <Label TextColor="Black" FontSize="15">-Contiene 4 Ramos de Hortensias Rosa Palo y 3 Ramos Blancos.</Label>
+            <Label TextColor="Black" FontSize="15">-Y un Jarron grande transparente con piedras de colores alrededor.</Label>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

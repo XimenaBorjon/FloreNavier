@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FloreNavier"
+             x:Class="FloreNavier.AgregarFloreriaView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar" Command="{Binding AgregarCommand}"></ToolbarItem>
+
+    </ContentPage.ToolbarItems>
+    <StackLayout Margin="10">
+        <StackLayout.Resources>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Large"></Setter>
+                <Setter Property="VerticalOptions" Value="End"></Setter>
+                <Setter Property="WidthRequest" Value="150"></Setter>
+            </Style>
+        </StackLayout.Resources>
+
+        <StackLayout Orientation="Horizontal">
+            <Label>Nombre del cliente:</Label>
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Floreria.Nombre}"></Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label>Fecha:</Label>
+            <DatePicker HorizontalOptions="FillAndExpand" Date="{Binding Floreria.Fecha}"></DatePicker>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label>Tipo de Ramo:</Label>
+            <Picker HorizontalOptions="FillAndExpand" ItemsSource="{Binding Categoria}" SelectedItem="{Binding Floreria.Categorias}"></Picker>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label>Precio:</Label>
+            <Entry Keyboard="Numeric" HorizontalOptions="FillAndExpand" Text="{Binding Floreria.Unidades}"></Entry>
+        </StackLayout>
+
+        <Label Margin="10" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="Red" Text="{Binding Error}"></Label>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FloreNavier"
+             x:Class="FloreNavier.CategoriasFlor" Title="MENU CATEGORIAS">
+    <ContentPage.BindingContext>
+        <local:AgendaFloreria ></local:AgendaFloreria>
+    </ContentPage.BindingContext>
+    
+  
+
+    <Grid BackgroundColor="MediumPurple">
+        <Grid.RowDefinitions  >
+            <RowDefinition ></RowDefinition>
+
+
+
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions  >
+            <ColumnDefinition  ></ColumnDefinition>
+
+
+
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Column="0" >
+            <Image Source="tipoflor2.jpg" HeightRequest="230" Margin="10" x:Name="CLICKIMAGEN1" ></Image >
+            <Label Text="TIPO DE FLORES" FontAttributes="Bold" TextColor="DarkSlateBlue" Margin="0,0,0,10" HorizontalOptions="Center" ></Label>
+
+        </StackLayout>
+        <StackLayout Grid.Row="1" >
+            <Image Source="Bibliotecaflor.jpg" Aspect="AspectFill" HeightRequest="180" Margin="10" x:Name="CLICK1magen2" ></Image >
+            <Label Text="BIBLIOTECA" FontAttributes="Bold" TextColor="DarkSlateBlue" Margin="0,30,0,0" HorizontalOptions="Center" ></Label>
+
+        </StackLayout>
+        <StackLayout Grid.Row="1" Grid.Column="1" >
+            <Image Source="packflor.jpg"  HeightRequest="180" Margin="10" x:Name="CLICKmagen3c" ></Image>
+            <Label Text="PAQUETES DE FLORES" FontAttributes="Bold" TextColor="DarkSlateBlue" Margin="0,30,0,0" HorizontalOptions="Center" ></Label>
+
+        </StackLayout>
+        <StackLayout Grid.Column="1" >
+            <Image Source="Agenda.png" HeightRequest="250" x:Name="CLICK1magen4c" ></Image >
+            <Label Text="AGENDA" FontAttributes="Bold" TextColor="DarkSlateBlue" Margin="0,0,0,0" HorizontalOptions="Center" ></Label>
+
+        </StackLayout>
+
+       
+    </Grid>
+</ContentPage>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FloreNavier"
+             x:Class="FloreNavier.AgendaFloreriaView" BackgroundColor="Lavender">
+    <ContentPage.BindingContext>
+        <local:AgendaFloreria x:Name="agendas"></local:AgendaFloreria>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="regresar.png" Command="{Binding RegresarCommand}"></ToolbarItem>
+        <ToolbarItem Text="Nuevo" Command="{Binding NavegarAgregarCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout Margin="10">
+
+        <StackLayout Orientation="Horizontal">
+            <Label VerticalOptions="Center">Fecha:</Label>
+            <DatePicker Format="dd 'de' MMMM 'de' yyyy" DateSelected="DatePicker_DateSelected"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" Date="{Binding Fecha}"></DatePicker>
+        </StackLayout>
+
+        <Grid Margin="0,0,0,10" BackgroundColor="SlateBlue">
+            <Grid.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="Padding" Value="5"></Setter>
+                    <Setter Property="TextColor" Value="White"></Setter>
+                    <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                    <Setter Property="HeightRequest" Value="35"></Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".5*"></ColumnDefinition>
+                <ColumnDefinition Width=".3*"></ColumnDefinition>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label HorizontalTextAlignment="Start">Nombre Cliente</Label>
+            <Label Grid.Column="1" HorizontalTextAlignment="Center">Paquete</Label>
+            <Label Grid.Column="2">Precio</Label>
+        </Grid>
+
+        <CollectionView ItemsSource="{Binding Filtrada}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.Resources>
+                            <Style TargetType="Label">
+                                <Setter Property="Padding" Value="5"></Setter>
+                            </Style>
+                        </Grid.Resources>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".5*"></ColumnDefinition>
+                            <ColumnDefinition Width=".3*"></ColumnDefinition>
+                            <ColumnDefinition Width=".2*"></ColumnDefinition>
+                            <ColumnDefinition Width="50"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="{Binding Nombre}"></Label>
+                        <Label Text="{Binding Categorias}" Grid.Column="1" HorizontalTextAlignment="Center"></Label>
+                        <Label Text="{Binding Unidades}" Grid.Column="2" HorizontalTextAlignment="Center"></Label>
+                        <StackLayout Grid.Column="3" Orientation="Horizontal">
+                            <Image HeightRequest="16" Source="editar.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding  Source={x:Reference agendas}, Path=EditarCommand}" CommandParameter="{Binding .}"></TapGestureRecognizer>
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Image Margin="5,0,0,0" HeightRequest="16" Source="eliminar.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={x:Reference agendas}, Path=EliminarCommand}" CommandParameter="{Binding .}"></TapGestureRecognizer>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+     
+
+    </StackLayout>
+
+
+</ContentPage>

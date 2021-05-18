@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FloreNavier"
+             x:Class="FloreNavier.TipoFloresView" Title="Tipos de Flores" IconImageSource="icono.jpg" Background="Lavender">
+    <ContentPage.BindingContext>
+        <local:AgendaFloreria ></local:AgendaFloreria>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="regresar.png" Command="{Binding RegresarCommand}"></ToolbarItem>
+        
+    </ContentPage.ToolbarItems>
+    
+    <ScrollView >
+        <StackLayout Padding="10">
+            
+            <Image Margin="15,15,15,15" WidthRequest="120" Source="amapola.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">AMAPOLAS</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="180" Source="claveles.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">CLAVELES</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="180" Source="dalias.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">DALIAS</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="180" Source="flordecerezo.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">FLORES DE CEREZO</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="150" Source="girasoles.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">GIRASOLES</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="200" HeightRequest="120" Source="Hortensias.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">HORTENCIAS</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="150" Source="lirios.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">LIRIOS</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="180" Source="narcisos.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">NARSISOS</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="180" Source="rosas.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">ROSAS</Label>
+
+            <Image Margin="15,15,15,15" WidthRequest="180" HeightRequest="130" Source="tulipanes.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" FontSize="15">Tulipanes</Label>
+            
+            
+
+        </StackLayout>
+    </ScrollView>
+    
+    
+</ContentPage>

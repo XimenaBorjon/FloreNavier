@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FloreNavier"
+             x:Class="FloreNavier.Bibliotecaview" Title="BIBLIOTECA DE FLORES" Background="Lavender">
+    <ContentPage.BindingContext>
+        <local:AgendaFloreria ></local:AgendaFloreria>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="regresar.png" Command="{Binding RegresarCommand}"></ToolbarItem>
+        
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout Padding="10">
+
+            <Label HorizontalOptions="Center" FontSize="25" TextColor="DarkMagenta">ROSAS</Label>
+            
+            <Label TextColor="Black" HorizontalTextAlignment="Start">La rosa es una flor perteneciente a la familia de las Rosáceas que tiene gran popularidad en todo el mundo. Si bien la planta recibe el nombre de "rosal", la denominación "rosa" ha pasado a ser el nombre común de todas las flores de esta familia, las cuales bordean las 30 mil variedades.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Start">De igual modo, en el Antiguo Egipto, e incluso en algunas imágenes de la época, se puede observar la presencia de rosas antiguas, las cuales acompañaban las acciones relacionadas a la belleza. Incluso ahora, en la zona que abarca este país, Marruecos y Turquía, la aromaterapia en base a estas plantas sigue siendo bastante popular.</Label>
+            
+            <Label TextColor="Fuchsia" HorizontalTextAlignment="Center">TIPOS DE ROSAS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="tipo.png"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" Margin="0,0,0,20">El primero de ellos es el de las "Rosas silvestres", y de estas flores descienden todas las demás rosas de la actualidad. Entre sus variedades más conocidas se encuentran la Rosa Banksiae, la Rosa Canina, la Rosa damascena, la Rosa Gallica, la Rosa rugosa, la Rosa Virginiana, entre otras.</Label>
+
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="tipo2.png"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" Margin="0,0,0,20">Las llamadas "Rosas Antiguas" son aquellas conocidas desde antes de 1867 y no son muy populares en la actualidad. No obstante, son recomendables para quienes se inician en el cultivo de estas flores ya que no requieren mayores cuidados. Entre sus principales grupos se encuentran las "Alba", los "Borbonianos", las "centifolia", "las rosas chinas", los "Damascenos", el "Híbrido perpetuo", "Portland", entre otras.</Label>
+
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="tipo3.png"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center" Margin="0,0,0,20">Finalmente, los "Rosales modernos" están formados por las variedades aparecidas luego de 1867. Este grupo es el más popular actualmente, especialmente los llamados "Híbridos de té". En el grupo también se encuentran los rosales "Trepadores", "Sarmentosos", "Miniatura", "Floribunda", "Arbustivos", "Tapizantes", entre otras.</Label>
+
+            <Label TextColor="Gold" HorizontalTextAlignment="Center" Margin="0,40,0,0" FontSize="25">GIRASOLES</Label>
+            
+            <Label TextColor="Black" HorizontalTextAlignment="Start">Girasol es una planta herbácea de la familia asterácea, de nombre científico helianthus annuus, que se caracteriza por tener flores amarillas, frutos comestibles y tallos robustos y erguidos.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Start">Actualmente, es una planta cultivada en un gran número de países gracias a sus diversos aportes alimenticios derivados de sus semillas y de sus propiedades para obtener aceite. Por otro lado, los girasoles también se acostumbran a emplear con fines decorativos.</Label>
+
+            <Label TextColor="Gold" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS DE UN GIRASOL</Label>
+            <Label TextColor="Black">*Es una planta herbácea.</Label>
+            <Label TextColor="Black">*Crece anualmente.</Label>
+            <Label TextColor="Black">*Es una planta que puede llegar a medir hasta tres metros de altura.</Label>
+            <Label TextColor="Black">*Tiene un tallo robusto, erguido, con pelos y hojas ovaladas de gran tamaño. El tallo no se ramifica.</Label>
+            <Label TextColor="Black">*Es una planta que tiene una respuesta a la luz solar de nombre heliotropismo. Por ello tiene la capacidad de moverse en dirección a los rayo del Sol.</Label>
+            <Label TextColor="Black">*La flor del girasol puede medir entre 5 y 40 centímetros de ancho.</Label>
+            <Label TextColor="Black">*Es una planta que crece a diario si cuenta con las condiciones necesarias.</Label>
+            <Label TextColor="Black">*Tiene diversas propiedades alimenticias de las cuales se puede obtener aceite de girasol y harinas ricas proteínicas.</Label>
+
+            <Label TextColor="Gold" HorizontalTextAlignment="Center" FontSize="15">CICLO DE VIDA DE UN GIRASOL</Label>
+            <Image Margin="0,0,0,0" WidthRequest="200" Source="Ciclo.jpg"></Image>
+
+            <Label TextColor="MediumVioletRed" HorizontalTextAlignment="Center" FontSize="25" Margin="0,50,0,0">TULIPAN</Label>
+
+            <Label TextColor="Black" Margin="0,0,0,15">El tulipán (Hibiscus rosa-sinensis) es una flor bulbosa perteneciente al género "Tulipa" y a la familia "Liliaceae". La denominación tulipán es usada para referirse a prácticamente todas las especies del género tulipa, las cuales se cuentan por cientos.Su reconocimiento como tal data del siglo XVI y actualmente es una de las flores más populares del mundo, con ventas que solo pueden ser superadas por la de las rosas.</Label>
+            <Label TextColor="MediumVioletRed" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS Y TIPOS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="tuli.png"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Los tulipanes son fáciles de reconocer por sus características bulbosas. La flor posee un bulbo truncado basal cubierto por una túnica pilosa por dentro. Los pétalos se alzan y por lo general se encuentra acuminados (cerrados hacia adentro). El tallo muy pocas veces es ramificado y las hojas son basales (cerca al tallo), caulinares, espaciadas o lanceoladas (semi aplanadas). Con respecto al tallo, este es largo y sin mayores variaciones, llegando a alcanzar fácilmente los 20 centímetros, aunque hay registros de que puede llegar a medir 70 centímetros.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">El tulipán es una flor que posee diversos colores debido a la proporción de los pigmentos que poseen como los carotenoides, la cianidina, la pelagonidina, la delfinidina, entre otros. Estas mezclas generan los cambios que conocemos y que han hecho que los campos de cultivo de esta flor reciban el nombre de "campos arcoíris".</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">En la actualidad existen más de 5 mil especies registradas de tulipanes en todo el mundo. Entre las principales especies de tulipanes se encuentran el Tulipán Gesneriana, el Tulipán Fosteriana, el Tulipán Kaufmanniana, el Tulipán Greigii entre otros. La mezcla y cambios que han sufrido estos grupos hanpermitido que varias decenas de híbridos sean conocidos en la actualidad.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Con respecto a los tulipanes que son cultivables, entre los más conocidos se encuentran los llamados tulipanes dobles (que presentan flores con pétalos adicionales, lo que lo hace más voluptuoso), los tulipanes "Flor de Lirio" (curvilíneos y vistosos), los tulipanes con flecos (con seis hojas y un corte diferente), los tulipanes papagayo (de forma irregular, curva y con manchas) y los tulipanes de color sólido, considerados la variedad más hermosa, con un color de base y uno de contraste.</Label>
+
+            <Label TextColor="DarkSalmon" HorizontalTextAlignment="Center" FontSize="25" Margin="0,50,0,0">LIRIOS</Label>
+            
+            <Label TextColor="Black">Los lirios son flores pertenecientes al género Lilium, familia de las Liliáceas, del orden de las Liliales. En algunas partes del mundo se les conoce como Azucenas, nombre que hace referencia a sus más de 110 especies.Los lirios son flores muy aromáticas y es común verlas en los regalos, arreglos florales, y también adornando jardines.Además, sus propiedades medicinales han sido largamente documentadas desde la antigüedad, y está presente en los emblemas de varias instituciones, países y casas debido a su elegancia.</Label>
+            <Label TextColor="Black">La flor tiene como hábitat natural las zonas montañosas o boscosas, pero también se adapta a los pantanos y a climas diversos. Entre los tipos de lirios más conocidos se encuentran los llamados, "Jouney'sEnd", los "medeoloides", el "especiosumvar. rubrum", los "lirios martagon", y los lirios "SterlingStar" y "StarGazer". Estos no sólo se diferencian por sus colores, sino también por sus tamaños y la forma de sus hojas.</Label>
+            
+            <Label TextColor="DarkSalmon" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="lirio.png"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Los lirios se encuentran en el grupo de las plantas perennes y pueden alcanzar fácilmente un metro de alto. Sus tallos frondosos forman bulbos subterráneos que permiten a la flor guardar nutrientes y sobrevivir el invierno sin problemas, por eso se conocen como flores altamente resistentes.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Si bien la mayoría de las especies de lirios pierden su follaje durante las partes más frías del año, este periodo de inactividad las permites alistarse para su florecimiento. Sus colores varían dependiendo de la especie, aunque los lirios blancos se encuentran entre los más cotizados.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Sus patrones de germinación a través de semillas son diferentes y dependen también del hábitat y del clima en donde se encuentran. Los lirios se caracterizan por tener mucha fragancia, por lo que son usualmente usados en la fabricación de perfumes.</Label>
+
+            <Label TextColor="PaleVioletRed" HorizontalTextAlignment="Center" FontSize="25" Margin="0,50,0,0">CLAVELES</Label>
+            
+            <Label TextColor="Black">El clavel es una planta herbácea originaria de la zona mediterránea, aunque también conocida en la península ibérica. La flor pertenece a la orden de las Caryophyllales, familia de las Caryophyllaceae, y la mayor parte de sus especies florece durante todo el año.</Label>
+            <Label TextColor="Black">Los claveles son flores muy aromáticas y coloridas, y son frecuentemente cultivadas para ser obsequiadas.Se reconoce especialmente tres grandes variedades de claveles de cultivo masivo las cuales se agrupan en "Dianthuscaryophyllussubsp. Coronarius", "Dianthuscaryophyllusvar. Coronarius", y "Dianthuscaryophyllussubsp. Coronarius". En el caso del cultivo ornamental, resaltan el clavel común, el clavel del poeta, el clavel coronado, el clavel de roca y el clavel de China.</Label>
+            
+            <Label TextColor="PaleVioletRed" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="claveles1.png"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Los claveles son reconocido fácilmente porque son flores cespitosas, es decir, que poseen un tallo subterráneo corto que crece dando matas densas de hasta un metro de altura y de entre 6 y 8.5 centímetros de diámetro.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Los claveles poseen hojas lineales, angostas, opuestas y envainadoras, y cada tallo forma una flor terminal de no menos de cinco pétalos festoneados (con ondas) o con dientecillos. En algunas partes del mundo se han registrado flores de esta familia de hasta 40 pétalos, así que todo depende de la especie.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Como los claveles son flores bisexuales, florecen en un grupo ramificado o bifurcado. La flor tiene fuerte fragancia y sus colores más comunes son el rojo, rosado, blanco, amarillo y mixto. Los diferentes tamaños de la flor permiten clasificarla para su venta, siendo los claveles de 60 centímetros los favoritos en el comercio. También se encuentran variantes de 50 centímetros, de 40 centímetros y de 30 centímetros a menos. Estos últimos son usados especialmente en ramilletes.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Como mencionábamos líneas arriba, los claveles florecen todo el año, y en sus variedades comerciales pueden llegar a producir hasta 20 tallos al año.</Label>
+
+            <Label TextColor="DarkRed" HorizontalTextAlignment="Center" FontSize="25" Margin="0,50,0,0">AMAPOLAS</Label>
+            <Label TextColor="Black">Amapola es el nombre común con que se conoce una variedad de plantas silvestres, propias de Norteamérica, Asia y Europa, así como a su flor. La palabra, como tal, deriva de ababol.</Label>
+            <Label TextColor="Black">Las amapolas son plantas anuales, de la familia de la Papaveraceae, por lo general con flores rojas, el tallo cubierto de pelos erizados, el fruto en cápsula y la semilla color negruzco. Crece frecuentemente en los sembrados.</Label>
+            <Label TextColor="Black">La amapola contiene grandes cantidades de alcaloides, por esta razón, con ella se pueden producir diversas sustancias narcóticas, como el opio, la morfina o la heroína, consideradas como drogas en muchos países y, en consecuencia, de producción, venta y consumo ilegal debido a sus efectos perjudiciales en la salud física y mental de las personas.</Label>
+            
+            <Label TextColor="DarkRed" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="ama.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Esta planta tiene un carácter anual aunque la floración la tenga en primavera y no resista fácilmente las heladas o la humedad (con estas condiciones la plantación puede perderse) Su forma es erecta, con tallos de color verde claro y algunas cerdas en los extremos. Las hojas son simples, con base bastante alargada y algo ovalada en ocasiones. La planta en sí cuenta con una altura que va desde los 25 a los 90 centímetros.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Si hay algo que gustan a las personas de la amapola es la floración que tiene por que ésta da un aire al campo estupendo y el color rojo intenso que la caracteriza no hace otra cosa que embellecer cualquier lugar en el que se coloque o jardín limpio en el que esté. Está con nosotros desde hace siglos y, además del poder terapéutico que se le localiza, también se ha utilizado siempre con fines decorativos.</Label>
+
+            <Label TextColor="DeepSkyBlue" HorizontalTextAlignment="Center" FontSize="25" Margin="0,50,0,0">HORTENSIAS</Label>
+            
+            <Label TextColor="Black">Con flores que pueden tener un diámetro de hasta 25 centímetros, las hortensias crea una atmósfera exuberante y cargada de color en casa. Son flores voluminosas y coloridas que nos alegran con su presencia. Por lo general, los ramos de flores de hortensias suelen durar alrededor de 1 semana, siempre y cuando prestemos la debida atención a sus cuidados.</Label>
+            <Label TextColor="Black">Las hortensias aman el color. Se pueden encontrar en diferentes tonos de rojo, rosa y púrpura, blanco, verde y azul, o con una combinación de varios colores. Además de estos tonos, también existen otras que experimentan cambios de color según avanza la estación. En Bourguignon somos amantes de las hortensias y es en septiembre y durante el otoño cuando hacemos más uso de ellas, para crear ramos de flores con hortensias y las variedades más especiales de la flor, con colores que pasan por el burdeos, azul y verdes. Combinadas con otras flores y frutos de temporada como bayas y ramas crean un resultado espectacular.</Label>
+            
+            <Label TextColor="DeepSkyBlue" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="140" Source="hor.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Las hortensias son plantas que pertenecen a la familia de las Hydrangeaceae. Estas plantas son arbustos que provienen de Extremo Oriente y forman parte de los caducifolios.Sus hojas son de gran tamaño y cuentan con un color verde muy intenso. Éstas son ovaladas y su terminación es en punta. Se caen cada otoño.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">En relación a las flores de las hortensias se debe saber que éstas crecen en un color verde y luego se convierten en flores de colores, siendo los rosas y azules los tonos más frecuentes. Éstas además se presentan en grupos conocidos como corimbos.</Label>
+
+            <Label TextColor="DarkOrange" HorizontalTextAlignment="Center" FontSize="25" Margin="0,50,0,0">DALIAS</Label>
+            
+            <Label TextColor="Black">La dalia es una hermosa flor cargada de pétalos que realza por sus múltiples colores, sus tallos tiernos y flexibles, y sus raíces fuertes. Generalmente crece muy frondosa y cuando florece, se convierte en un espectacular bouquet natural. Hay quienes aseguran que representan la pasión y el impulso.</Label>
+            <Label TextColor="Black">Se conserva muy bien en regiones donde hay verano y primavera. Son flores muy codiciadas por las tiendas dedicadas a la elaboración de ramos, porque su belleza atrapa miradas y su aroma seduce al más exigente de los olfatos. En tonos rosa, amarillo, púrpura, rojo, naranja y sus combinaciones, son un exquisito regalo de la naturaleza.</Label>
+
+            <Label TextColor="DarkOrange" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="dali.png"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Especialistas en botánica refieren que la dalia es una planta que necesita de mucha luz para mantenerse con vida. Los rayos del sol son fuente de nutrientes y vitaminas que favorecen su floración, así que quienes deseen tener una dalia, deben ubicarla en un lugar iluminado, sobre una superficie fértil y protegida de los vientos.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Se contabilizan entre 41 y 50 especies endémicas, producto de más de dos siglos de cultivo en las zonas tropicales y subtropicales de México, donde suelen abundar. Las hay simples, con una sola capa de pétalos, pero también dobles, triples, cuádruples y hasta séxtuples. Las más pobladas parecen esferas tupidas que impactan por su forma y sus intensas tonalidades. Su tamaño también es diverso, algunas dalias apenas alcanzan los ocho centímetros, mientras otras sobrepasan los 15 centímetros.</Label>
+
+            <Label TextColor="White" HorizontalTextAlignment="Center" FontSize="25" Margin="0,50,0,0">NARCISOS</Label>
+            <Label TextColor="Black">Los narcisos son flores muy hermosas y tienen diferentes tamaños y formas según la variedad. Hay muchísimas, además de numerosos híbridos. El nombre científico proviene de dos teorías. La primera teoría dice que su nombre proviene del joven narcisista de la mitología griega Νάρκισσος (Narkissos) hijo del dios río Cephissus y de la ninfa Leiriope; que sobre todo se distinguía por su belleza.</Label>
+            <Label TextColor="Black">La mayoría de narcisos son amarillos, blancos, o amarillos, pero hay incluso narcisos rosados, anaranjados y como los narcisos con doble flor.</Label>
+
+            <Label TextColor="White" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="nari.jpg"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">El narciso es una planta de tipo bulbosa que forma parte de la familia de las Amariláceas. Esta planta cuenta con una variedad de 40 especies y su floración es completamente primaveral.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">En cuanto a sus rasgos físicos  esta planta cuenta con unas hojas alargadas y de color verde intenso. Así mismo posee flores en diversidad de colores siendo las más comunes las blancas. También pueden presentarse en colores amarillo o crema.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Estas flores del narciso crecen en grupos pero también pueden aparecer de forma individual. La vida de estas flores después de su florecimiento es de tan solo 20 días.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">En relación al uso de los narcisos se pueden tener como plantas para jardines exteriores o también pueden usarse para el interior. En el caso de querer usar su flor como decoración se recomienda que no se mezclen estas flores con otras ya que una sustancia del tallo del narciso acelera la muerte de otras plantas.</Label>
+
+
+            <Label TextColor="Pink" HorizontalTextAlignment="Center" FontSize="25" Margin="0,50,0,0">FLOR DE CEREZO</Label>
+            <Label TextColor="Black">Se conoce como flor de cerezo, o sakura, a uno de los símbolos más populares de la cultura japonesa. La flor de cerezo aparece en primavera y Japón celebra en su honor el festival del hanami. El festival consiste en reunirse con seres queridos a la sombra de los cerezos en los parques. Allí realizan una especie de picnic celebrando la llegada de las flores.</Label>
+            <Label TextColor="Black">Con la llegada de la primavera, las sakuras y el festival hanami también empieza el curso académico. Los cerezos se encuentran florecidos solamente en primavera adornando los parques japoneses con sus tonos rosados y blancos. Durante el resto del año, los cerezos se encuentran forrados de hojas y en invierno se ven desnudos.La flor de cerezo es un símbolo muy utilizado en la cultura popular japonesa. Se le atribuyen diversos significados. Uno de ellos se relaciona con la belleza de la naturaleza y lo efímera que puede ser la vida. Este significado particular se vincula con la imagen de los pétalos caídos cuando comienza la primavera.</Label>
+
+            <Label TextColor="Pink" HorizontalTextAlignment="Center" FontSize="15">CARACTERISTICAS</Label>
+            <Image Margin="0,0,0,0" WidthRequest="120" Source="florce.png"></Image>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Esta hermosa planta, tiene una corteza roja, hojas de color verde, de forma ovalada. Estas hojas se pierden después que ha sucedido la floración,  las flores son de color rosado o blancas y están formadas por 5 pétalos y apenas llegan a medir 3 cm. Son árboles centenarios, es decir,  llegan a vivir más de 100 años. Estos arboles, llegan a crecer muy rápido si se le compara con otras especies de similares características.</Label>
+            <Label TextColor="Black" HorizontalTextAlignment="Center">Uno de los principales usos que se le da a la flor de cerezo, como a su fruto es con fines medicinales, ya que tomando la infusión, sirve para la eliminación de líquidos o sea es diurético. También se cree que él te hecho con las flores ayudan a calmar los dolores premenstruales.</Label>
+
+            <Label TextColor="Indigo" HorizontalTextAlignment="Center" FontSize="25" Margin="0,40,0,0">FINAL DE LA BIBLIOTECA</Label>
+            <Label TextColor="Indigo" HorizontalTextAlignment="Center">GRACIAS POR SU VISITA!!</Label>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

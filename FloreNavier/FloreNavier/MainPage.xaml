@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FloreNavier.MainPage" Background="White">
+
+    <StackLayout Margin="15" VerticalOptions="FillAndExpand">
+        <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+        </StackLayout.GestureRecognizers>
+        <Image Source="logoarriba.jpg" WidthRequest="250"></Image>
+        <Label FontFamily="georgia" TextColor="Indigo" Margin="0,0,0,0" HorizontalTextAlignment="Center" FontSize="40" Text="FLORERIA NAVIER"></Label>
+        <Image Source="icono3.jpg" WidthRequest="260"></Image>
+        <Label TextColor="DarkMagenta" HorizontalTextAlignment="Center" FontSize="20" FontFamily="Stencil" Margin="0,40" Text="PRESIONA LA PANTALLA"></Label>
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+            <Label TextColor="Thistle" HorizontalTextAlignment="Center" FontFamily="Georgia" FontSize="22" Margin="30,10,10,10" Text="XIMENA BORJON CASTILLO"></Label>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
